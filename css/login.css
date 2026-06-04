@@ -54,7 +54,6 @@ body{
 .login-logo{
 
     background:#f8fbff;
-
     display:flex;
     justify-content:center;
     align-items:center;
@@ -66,6 +65,37 @@ body{
     width:350px;
     max-width:100%;
     object-fit:contain;
+}
+
+.logo-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2rem;
+}
+
+.home-btn{
+
+    text-decoration:none;
+
+    background:#0071f1;
+
+    color:white;
+
+    padding:1rem 2rem;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.home-btn:hover{
+
+    background:#005ec9;
+
+    transform:translateY(-3px);
 }
 
 /* FORMULARIO */
