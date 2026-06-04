@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #0071f1,
+        #00a2ff
+    );
+}
+
+.login-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:2rem;
+}
+
+.login-card{
+
+    width:1000px;
+    max-width:95%;
+
+    min-height:550px;
+
+    background:white;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.15);
+}
+
+/* LOGO */
+
+.login-logo{
+
+    background:#f8fbff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:2rem;
+}
+
+.login-logo img{
+    width:350px;
+    max-width:100%;
+    object-fit:contain;
+}
+
+/* FORMULARIO */
+
+.login-form-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:3rem;
+}
+
+.login-form{
+
+    width:100%;
+    max-width:350px;
+
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.login-form h1{
+    color:#0071f1;
+    font-size:2.5rem;
+    text-align:center;
+}
+
+.login-form p{
+    text-align:center;
+    color:#666;
+    margin-bottom:1rem;
+}
+
+.login-form input{
+
+    padding:1rem;
+
+    border:2px solid #e0e0e0;
+
+    border-radius:12px;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+.login-form input:focus{
+    border-color:#0071f1;
+}
+
+.login-form button{
+
+    margin-top:1rem;
+
+    padding:1rem;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#0071f1;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.login-form button:hover{
+
+    background:#005ec9;
+
+    transform:translateY(-3px);
+}
