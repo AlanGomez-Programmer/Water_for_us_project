@@ -319,3 +319,36 @@ body{
 
     border-radius:50px;
 }
+
+@media (max-width: 768px){
+
+    .donation-card{
+
+        grid-template-columns:1fr;
+    }
+
+    .left-side{
+
+        padding:2rem;
+    }
+
+    .left-side img{
+
+        width:180px;
+    }
+
+    .left-side h1{
+
+        font-size:2rem;
+    }
+
+    .right-side{
+
+        padding:2rem;
+    }
+
+    .payment-options{
+
+        flex-direction:column;
+    }
+}
