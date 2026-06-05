@@ -154,3 +154,24 @@ text-align:center;
 
 padding:3rem;
 }
+
+/* Estadisticas */
+
+@media (max-width:768px){
+
+    .stats{
+
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* Proyectos */
+
+@media (max-width:768px){
+
+    .project-grid{
+
+        grid-template-columns:1fr;
+    }
+}

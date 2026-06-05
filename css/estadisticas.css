@@ -38,3 +38,19 @@ th,td{
     padding:1rem;
     border-radius:50px;
 }
+
+@media (max-width:768px){
+
+    body{
+
+        padding:1rem;
+    }
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+    }
+}
+    
