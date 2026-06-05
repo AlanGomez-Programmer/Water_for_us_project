@@ -1,0 +1,40 @@
+body{
+    font-family:Montserrat,sans-serif;
+    background:#f5f9ff;
+    padding:3rem;
+}
+
+h1{
+    text-align:center;
+    color:#0071f1;
+    margin-bottom:3rem;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#0071f1;
+    color:white;
+}
+
+th,td{
+    padding:1rem;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+.back-btn{
+    display:block;
+    width:250px;
+    margin:3rem auto;
+    text-align:center;
+    text-decoration:none;
+    background:#0071f1;
+    color:white;
+    padding:1rem;
+    border-radius:50px;
+}
