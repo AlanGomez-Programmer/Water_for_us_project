@@ -153,23 +153,35 @@
     padding: 3rem;
 }
 
-/* Estadisticas */
+@media (max-width: 768px){
 
-@media (max-width:768px){
-
-    .stats{
+    .donation-card{
 
         grid-template-columns:1fr;
     }
-}
 
+    .left-side{
 
-/* Proyectos */
+        padding:2rem;
+    }
 
-@media (max-width:768px){
+    .left-side img{
 
-    .project-grid{
+        width:180px;
+    }
 
-        grid-template-columns:1fr;
+    .left-side h1{
+
+        font-size:2rem;
+    }
+
+    .right-side{
+
+        padding:2rem;
+    }
+
+    .payment-options{
+
+        flex-direction:column;
     }
 }
