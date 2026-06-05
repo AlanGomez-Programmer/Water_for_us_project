@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations - Water For Us</title>
+
+    <link rel="stylesheet" href="./css/donation.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="donation-card">
+
+            <!-- LEFT SIDE -->
+
+            <div class="left-side">
+
+                <img src="./img/logo.png" alt="logo">
+
+                <h1>Thank You For Your Help!</h1>
+
+                <p>
+                    Every donation helps us provide clean water,
+                    support communities and protect the environment.
+                </p>
+
+                <a href="index.html" class="back-btn">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="right-side">
+
+                <h2>Select a Donation Method</h2>
+
+                <div class="payment-options">
+
+                    <button class="option-btn active-btn" onclick="showForm('transfer', this)">
+                        Transfer
+                    </button>
+
+                    <button class="option-btn" onclick="showForm('card', this)">
+                        Card
+                    </button>
+
+                    <button class="option-btn" onclick="showForm('paypal', this)">
+                        PayPal
+                    </button>
+
+                </div>
+
+                <!-- TRANSFER -->
+
+                <div id="transfer" class="form-section active">
+
+                    <h3>Bank Transfer</h3>
+
+                    <input type="text" placeholder="Sender Name">
+
+                    <input type="text" placeholder="Reference Number">
+
+                    <input type="number" placeholder="Donation Amount">
+
+                    <button class="submit-btn" onclick="processDonation()">
+                        Donate Now
+                    </button>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div id="card" class="form-section">
+
+                    <h3>Credit / Debit Card</h3>
+
+                    <input type="text" placeholder="Card Holder Name">
+
+                    <input type="text" placeholder="Card Number">
+
+                    <input type="text" placeholder="Expiration Date (MM/YY)">
+
+                    <input type="password" placeholder="CVV">
+
+                    <input type="number" placeholder="Donation Amount">
+
+                    <button class="submit-btn" onclick="processDonation()">
+                        Donate Now
+                    </button>
+
+                </div>
+
+                <!-- PAYPAL -->
+
+                <div id="paypal" class="form-section">
+
+                    <h3>PayPal Donation</h3>
+
+                    <input type="email" placeholder="PayPal Email">
+
+                    <input type="text" placeholder="Full Name">
+
+                    <input type="number" placeholder="Donation Amount">
+
+                    <button class="submit-btn" onclick="processDonation()">
+                        Donate Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="successModal" class="modal">
+
+        <div class="modal-content">
+
+            <div id="loadingContent">
+
+                <div class="loader"></div>
+
+                <h2>Processing Donation...</h2>
+
+            </div>
+
+            <div id="successContent">
+
+                <h2>Thank You!</h2>
+
+                <p>
+                    Your donation has been successfully registered.
+                </p>
+
+                <a href="index.html" class="return-btn">
+                    Return to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./js/danation.js"></script>
+
+</body>
+
+</html>
