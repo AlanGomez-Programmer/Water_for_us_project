@@ -179,3 +179,31 @@ body{
 
     transform:translateY(-3px);
 }
+
+@media (max-width: 768px){
+
+    .login-card{
+
+        grid-template-columns:1fr;
+    }
+
+    .login-logo{
+
+        padding:2rem;
+    }
+
+    .login-logo img{
+
+        width:180px;
+    }
+
+    .login-form-container{
+
+        padding:2rem;
+    }
+
+    .login-form h1{
+
+        font-size:2rem;
+    }
+}
